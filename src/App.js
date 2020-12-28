@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import { requestRobots } from './redux/robot/robot.actions'
 
 import { CardList } from './components/card-list/card-list.component';
 import { SearchBox } from './components/search-box/search-box.component';
@@ -10,15 +12,12 @@ class App extends Component {
     super();
 
     this.state = {
-      robots: [],
       searchField: ''
     };
   }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(users => this.setState({ robots: users }));
+    this.props.onRequestRobots();
   }
 
   onSearchChange = event => {
@@ -26,7 +25,8 @@ class App extends Component {
   };
 
   render() {
-    const { robots, searchField } = this.state;
+    const { robots } = this.props;
+    const { searchField } = this.state;
     const filteredRobots = robots.filter(monster =>
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     );
@@ -41,4 +41,16 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    robots: state.requestRobots.robots
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onRequestRobots: () => requestRobots(dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
