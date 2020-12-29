@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/robots-collection/static/css/main.9cf0b956.chunk.css",
+    "main.js": "/robots-collection/static/js/main.d1263848.chunk.js",
+    "main.js.map": "/robots-collection/static/js/main.d1263848.chunk.js.map",
+    "runtime-main.js": "/robots-collection/static/js/runtime-main.dc32bfb2.js",
+    "runtime-main.js.map": "/robots-collection/static/js/runtime-main.dc32bfb2.js.map",
+    "static/js/2.2a8adf24.chunk.js": "/robots-collection/static/js/2.2a8adf24.chunk.js",
+    "static/js/2.2a8adf24.chunk.js.map": "/robots-collection/static/js/2.2a8adf24.chunk.js.map",
+    "static/js/3.27b8cbcf.chunk.js": "/robots-collection/static/js/3.27b8cbcf.chunk.js",
+    "static/js/3.27b8cbcf.chunk.js.map": "/robots-collection/static/js/3.27b8cbcf.chunk.js.map",
+    "index.html": "/robots-collection/index.html",
+    "static/css/main.9cf0b956.chunk.css.map": "/robots-collection/static/css/main.9cf0b956.chunk.css.map",
+    "static/js/2.2a8adf24.chunk.js.LICENSE.txt": "/robots-collection/static/js/2.2a8adf24.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc32bfb2.js",
+    "static/js/2.2a8adf24.chunk.js",
+    "static/css/main.9cf0b956.chunk.css",
+    "static/js/main.d1263848.chunk.js"
+  ]
+}
